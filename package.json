@@ -2,9 +2,12 @@
   "name": "class-name",
   "version": "1.0.0",
   "description": "library helper for get class name. Support condition (true | false | 1 | 0 | null | undefined) and cammelCase to Dash",
-  "main": "index.js",
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
   "scripts": {
-    "test": "mocha"
+    "test": "mocha tests"
   },
   "keywords": [
     "class-name"
@@ -13,6 +16,17 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "typescript": "^3.0.3",
+    "awesome-typescript-loader": "^4.0.1"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "trailingComma": "all"
   }
 }

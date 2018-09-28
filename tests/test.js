@@ -1,7 +1,7 @@
 "use strict";
 const chai = require("chai");
 const expect = chai.expect;
-const ClassName = require('./');
+const { ClassName } = require('../build');
 
 describe('#ClassName', () => {
   let classes = {};

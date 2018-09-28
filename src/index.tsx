@@ -1,15 +1,15 @@
-function className(hashValue) {
+export const ClassName = (hashValue: object = {}) => {
   const filterValue = Object.keys(hashValue).map((key) => truthyValue(key, hashValue));
   const finalValue = filterValue.filter(x => x !== '');
   return finalValue.join(' ');
 }
 
-function truthyValue(key, hashValue) {
+const truthyValue = (key: string = '', hashValue: object = {}) => {
   return hashValue[key] ? camelCaseToDash(key) : '';
 }
 
-function camelCaseToDash(str) {
+const camelCaseToDash = (str: string = '') => {
   return str.replace(/([a-zA-Z])(?=[A-Z])/g, '$1-').toLowerCase()
 }
 
-module.exports = className;
+export default ClassName;
