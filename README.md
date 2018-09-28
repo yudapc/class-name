@@ -2,9 +2,13 @@
 
 library helper for get class name. Support condition (true | false | 1 | 0 | null | undefined) and cammelCase to Dash
 
-```
-import ClassName from 'class-name';
+### import
+`import ClassName from 'class-name';`
+### or
+### require
+`const ClassName = require('class-name');`
 
+```
 classes = {
   'kiri': true,
   'kanan': 1,
